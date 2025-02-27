@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState,} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setCurrentTime, setDuration } from "../../../Store/reducers/songPlayingSlice";
-import { pause, playSong } from "../../../Store/reducers/songPlayingSlice";
 
 const AudioSlider = ({ audioRef }) => {
   const dispatch = useDispatch();

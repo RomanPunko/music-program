@@ -8,7 +8,6 @@ const VolumeControl = ( { audioRef } ) => {
   
   const volume = useSelector((state) => state.songPlaying.volume);
   const dispatch = useDispatch();
-  
 
   ////
 
@@ -21,7 +20,7 @@ const VolumeControl = ( { audioRef } ) => {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = volume / 100; // Нормалізація значення (0-100 -> 0-1)
+      audioRef.current.volume = volume / 100;
     }
   }, [volume, audioRef]);
 

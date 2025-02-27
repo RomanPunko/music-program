@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Song from "../../components/Song/Song";
 import React, { useState } from "react";
 import "./playlistPage.scss";
-import { useFetchAllSongsQuery,useFetchAllPlaylistsQuery } from "../../Services/service";
+import { useFetchAllPlaylistsQuery } from "../../Services/service";
 import { toggleLike } from "../../Store/reducers/likedPlaylistSlise";
 
 

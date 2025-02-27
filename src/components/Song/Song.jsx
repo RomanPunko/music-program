@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import playArrow from "../../Icon/playArrow.svg";
 import pauseIcon from "../../Icon/pauseIcon.svg";
 import { useSelector, useDispatch } from "react-redux";
@@ -13,7 +13,6 @@ const Song = ({ songsInfo, songsList}) => {
   const isPlaying = useSelector((state) => state.songPlaying.isPlaying);
 
   const isActive = currentSong && currentSong.id === songsInfo.id;
-
 
   ////
 

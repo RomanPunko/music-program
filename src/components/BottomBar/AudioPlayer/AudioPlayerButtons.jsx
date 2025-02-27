@@ -3,14 +3,14 @@ import playArrow from "../../../Icon/playArrow.svg";
 import pauseIcon from "../../../Icon/pauseIcon.svg";
 import skipPrevious from "../../../Icon/skipPrevious.svg";
 import skipNext from "../../../Icon/skipNext.svg";
-import "./audioPlayer.scss";
+import "./audioPlayerButtons.scss";
 import AudioSlider from "./AudioSlider";
 import { useSelector, useDispatch } from "react-redux";
 import { playSong, pause, nextSong, previousSong} from "../../../Store/reducers/songPlayingSlice";
 import VolumeControl from "./VolumeControl/VolumeControl";
 
 
-const AudioPlayer = () => {
+const AudioPlayerButtons = () => {
 
   const dispatch = useDispatch();
   const currentSong = useSelector((state) => state.songPlaying.currentSong);
@@ -18,7 +18,7 @@ const AudioPlayer = () => {
   const audioRef = useRef(null);
   const currentSongsList = useSelector((state) => state.songPlaying.currentSongsList);
 
-  ////
+  ////g
 
   useEffect(() => {
     if (currentSong && audioRef.current) {
@@ -73,7 +73,7 @@ const AudioPlayer = () => {
       <audio src={currentSong && currentSong.urlSong} ref={audioRef}></audio>
 
       <div className="flex items-center gap-5 absolute left-1/2 -translate-x-1/2 text-4xl box-content -mt-4">
-        <div className="rounded-[10px] p-[5px] cursor-pointer icon-hover">
+        <div className="rounded-[10px] p-[5px] cursor-pointer icon-hover" onClick={handlePreviousSong}>
           <img src={skipPrevious} alt="" className="w-8" onClick={handlePreviousSong}/>
         </div>
         <div className="rounded-[10px] p-[5px] cursor-pointer icon-hover">
@@ -84,8 +84,8 @@ const AudioPlayer = () => {
             onClick={handlePlayPause}
           />
         </div>
-        <div className="rounded-[10px] p-[5px] cursor-pointer icon-hover">
-          <img src={skipNext} alt="" className="w-8" onClick={handleNextSong} />
+        <div className="rounded-[10px] p-[5px] cursor-pointer icon-hover" onClick={handleNextSong}>
+          <img src={skipNext} alt="" className="w-8" />
         </div>
       </div>
       <div className="absolute bottom-0.5 left-[50%] -translate-x-1/2 mb-[5px]">
@@ -96,4 +96,4 @@ const AudioPlayer = () => {
   );
 };
 
-export default AudioPlayer;
+export default AudioPlayerButtons;

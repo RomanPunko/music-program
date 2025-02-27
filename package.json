@@ -2,7 +2,6 @@
   "name": "music",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://RomanPunko.github.io/music-program",
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "@tailwindcss/vite": "^4.0.3",
@@ -17,8 +16,6 @@
     "sass": "^1.83.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

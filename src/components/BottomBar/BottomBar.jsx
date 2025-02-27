@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./bottomBar.scss";
-import AudioPlayer from "./AudioPlayer/AudioPlayer";
+import AudioPlayerButtons from "./AudioPlayer/AudioPlayerButtons";
 import { toggleLike } from "../../Store/reducers/likedSongsSlice";
 
 const BottomBar = () => {
@@ -39,7 +39,7 @@ const BottomBar = () => {
           </>
         )}
       </div>
-      <AudioPlayer />
+      <AudioPlayerButtons />
       <div className="cursor-pointer absolute right-3 w-6 h-6">
         <i
           className={`cursor-pointer text-2xl absolute right-3 transition-colors duration-300 ${
