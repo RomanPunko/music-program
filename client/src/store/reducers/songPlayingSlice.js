@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   currentSong: null,
@@ -11,9 +11,8 @@ const initialState = {
   pausedTime: 0,
 };
 
-
 export const songPlayingSlice = createSlice({
-  name: "songPlaying",
+  name: 'songPlaying',
   initialState,
   reducers: {
     play: (state, action) => {
@@ -25,7 +24,7 @@ export const songPlayingSlice = createSlice({
       state.isActive = true;
     },
     pause: (state) => {
-      state.isPlaying = false; 
+      state.isPlaying = false;
       state.pausedTime = state.currentTime;
       state.isActive = true;
     },
@@ -39,26 +38,33 @@ export const songPlayingSlice = createSlice({
       state.volume = action.payload;
     },
     nextSong: (state) => {
-      const currentIndex = state.currentSongsList.findIndex((song) => song.id === state.currentSong.id);
+      const currentIndex = state.currentSongsList.findIndex(
+        (song) => song.id === state.currentSong.id
+      );
 
-      if (currentIndex >= 0 && currentIndex < state.currentSongsList.length - 1) {
+      if (
+        currentIndex >= 0 &&
+        currentIndex < state.currentSongsList.length - 1
+      ) {
         state.currentSong = state.currentSongsList[currentIndex + 1];
         state.isPlaying = true;
         state.currentTime = 0;
-      } else{
+      } else {
         state.currentSong = state.currentSongsList[0];
         state.isPlaying = true;
         state.currentTime = 0;
       }
     },
     previousSong: (state) => {
-      const currentIndex = state.currentSongsList.findIndex((song) => song.id === state.currentSong.id);
+      const currentIndex = state.currentSongsList.findIndex(
+        (song) => song.id === state.currentSong.id
+      );
 
       if (currentIndex > 0) {
         state.currentSong = state.currentSongsList[currentIndex - 1];
         state.isPlaying = true;
         state.currentTime = 0;
-      } else{
+      } else {
         state.currentSong = state.currentSongsList[0];
         state.isPlaying = false;
         state.currentTime = 0;
@@ -67,5 +73,13 @@ export const songPlayingSlice = createSlice({
   },
 });
 
-export const { play, pause, setCurrentTime, setVolume, setDuration, nextSong, previousSong } = songPlayingSlice.actions;
+export const {
+  play,
+  pause,
+  setCurrentTime,
+  setVolume,
+  setDuration,
+  nextSong,
+  previousSong,
+} = songPlayingSlice.actions;
 export default songPlayingSlice.reducer;

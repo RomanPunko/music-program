@@ -1,6 +1,6 @@
 /********** Range Input Styles **********/
 /* Range Reset */
-input[type="range"] {
+input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
@@ -9,20 +9,24 @@ input[type="range"] {
 }
 
 /* Removes default focus */
-input[type="range"]:focus {
+input[type='range']:focus {
   outline: none;
 }
 
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* Slider track */
-input[type="range"]::-webkit-slider-runnable-track {
-  background: linear-gradient(to right, #fff var(--progress, 0%), gray var(--progress, 0%));
+input[type='range']::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    to right,
+    #fff var(--progress, 0%),
+    gray var(--progress, 0%)
+  );
   border-radius: 0.5rem;
   height: 0.3rem;
 }
 
 /* Slider thumb */
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -2px; /* Centers thumb on the track */
@@ -34,7 +38,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50px;
 }
 
-input[type="range"]:hover::-webkit-slider-thumb {
+input[type='range']:hover::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -3.5px; /* Centers thumb on the track */
@@ -46,17 +50,20 @@ input[type="range"]:hover::-webkit-slider-thumb {
   border-radius: 50px;
 }
 
-
 /******** Firefox styles ********/
 /* Slider track */
-input[type="range"]::-moz-range-track {
-  background: linear-gradient(to right, #fff var(--progress, 0%), gray var(--progress, 0%));
+input[type='range']::-moz-range-track {
+  background: linear-gradient(
+    to right,
+    #fff var(--progress, 0%),
+    gray var(--progress, 0%)
+  );
   border-radius: 0.5rem;
   height: 0.3rem;
 }
 
 /* Slider thumb */
-input[type="range"]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   border: none; /* Removes extra border that FF applies */
   border-radius: 0; /* Removes default border-radius that FF applies */
 

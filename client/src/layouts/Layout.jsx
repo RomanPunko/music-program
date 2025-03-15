@@ -1,7 +1,6 @@
-import React from "react";
-import NavBar from "../components/NavBar/NavBar";
-import AudioPlayer from "../components/audioPlayer/AudioPlayer";
-
+import React from 'react';
+import NavBar from '../components/NavBar/NavBar';
+import AudioPlayer from '../components/audioPlayer/AudioPlayer';
 
 const Layout = ({ children }) => {
   return (

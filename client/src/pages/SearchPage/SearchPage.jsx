@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import Song from "../../components/Song/Song";
-import { useFetchSongsQuery } from "../../services/service";
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import Song from '../../components/Song/Song';
+import { useFetchSongsQuery } from '../../services/service';
 
 const SearchPage = () => {
-
   const { data: songsList = [], error, isLoading } = useFetchSongsQuery();
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState('');
 
   ////
 
@@ -19,7 +18,7 @@ const SearchPage = () => {
     song.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  //// 
+  ////
 
   return (
     <div className="w-full pt-8 overflow-y-auto pb-[80px] h-full">
@@ -35,7 +34,9 @@ const SearchPage = () => {
         <div className="text-5xl mb-5 pl-8">
           <b>Listening now</b>
         </div>
-        {filteredSongs.map((song) => <Song key={song.id} songsInfo={song} songsList={songsList} />)}
+        {filteredSongs.map((song) => (
+          <Song key={song.id} songsInfo={song} songsList={songsList} />
+        ))}
       </div>
     </div>
   );

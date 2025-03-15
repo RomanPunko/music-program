@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   likedSongs: [],
 };
 
 export const likedSongsSlice = createSlice({
-  name: "likedSongs",
+  name: 'likedSongs',
   initialState,
   reducers: {
     toggleLike: (state, action) => {

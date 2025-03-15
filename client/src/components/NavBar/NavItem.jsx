@@ -1,5 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
-import React from "react";
+import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
 
 const NavItem = ({ to, icon, label }) => {
   const location = useLocation();

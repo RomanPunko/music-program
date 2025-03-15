@@ -2,24 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
 $colors: (
   primary: #111,
   secondary: #222,
   border: #ffffff50,
   text: #fff,
-  hover: #ffffff10
+  hover: #ffffff10,
 );
 
-.wrapper{
+.wrapper {
   display: flex;
   height: 100vh;
   color: map-get($colors, text);
   background-color: map-get($colors, secondary);
 }
 
-a{
+a {
   color: map-get($colors, text);
 }
-
-

@@ -1,13 +1,14 @@
-import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
-import { toggleLike } from "../../store/reducers/likedPlaylistSlise";
-import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { toggleLike } from '../../store/reducers/likedPlaylistSlise';
+import { useSelector, useDispatch } from 'react-redux';
 
 const PlaylistCard = ({ id, avatar, artist, name }) => {
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const likedPlaylist = useSelector((state) => state.likedPlaylist.likedPlaylist)
+  const likedPlaylist = useSelector(
+    (state) => state.likedPlaylist.likedPlaylist
+  );
 
   ///
 
@@ -26,12 +27,16 @@ const PlaylistCard = ({ id, avatar, artist, name }) => {
       onClick={() => navigate(`/playlist/${id}`)}
     >
       <div>
-        <img src={avatar} alt="" className="w-[200px] bg-white rounded-lg mb-2" />
+        <img
+          src={avatar}
+          alt=""
+          className="w-[200px] bg-white rounded-lg mb-2"
+        />
       </div>
       <div className="mb-2 text-xl font-bold">{name}</div>
       <div className="playlist__artist">{artist}</div>
       <i
-        className={`far ${isLiked ? " fas fa-heart " : "fa-heart "} 
+        className={`far ${isLiked ? ' fas fa-heart ' : 'fa-heart '} 
           song__like-icon cursor-pointer text-xl absolute right-3 top-3 bg-black bg-opacity-30 p-2 rounded-full`}
         onClick={handleToggleLike}
       ></i>

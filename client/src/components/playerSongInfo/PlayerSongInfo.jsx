@@ -1,11 +1,10 @@
-import React from "react";
-import { useSelector} from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
-const PlayerSongInfo = () =>{
-
+const PlayerSongInfo = () => {
   const currentSong = useSelector((state) => state.songPlaying.currentSong);
 
-  return(
+  return (
     <div className="flex items-center">
       {currentSong && (
         <>
@@ -21,7 +20,7 @@ const PlayerSongInfo = () =>{
         </>
       )}
     </div>
-  )
-}
+  );
+};
 
 export default PlayerSongInfo;
