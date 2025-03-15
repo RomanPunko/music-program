@@ -1,0 +1,67 @@
+/********** Range Input Styles **********/
+/* Range Reset */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* Slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #fff var(--progress, 0%), gray var(--progress, 0%));
+  border-radius: 0.5rem;
+  height: 0.3rem;
+}
+
+/* Slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -2px; /* Centers thumb on the track */
+
+  /* Custom styles */
+  background-color: #fff; /* Червоний колір для повзунка */
+  height: 0rem;
+  width: 0rem;
+  border-radius: 50px;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -3.5px; /* Centers thumb on the track */
+
+  /* Custom styles */
+  background-color: #fff; /* Червоний колір для повзунка */
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50px;
+}
+
+
+/******** Firefox styles ********/
+/* Slider track */
+input[type="range"]::-moz-range-track {
+  background: linear-gradient(to right, #fff var(--progress, 0%), gray var(--progress, 0%));
+  border-radius: 0.5rem;
+  height: 0.3rem;
+}
+
+/* Slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /* Removes extra border that FF applies */
+  border-radius: 0; /* Removes default border-radius that FF applies */
+
+  /* Custom styles */
+  background-color: #fff; /* Червоний колір для повзунка */
+  height: 1rem;
+  width: 1rem;
+}

@@ -1,0 +1,158 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "name": "Dance Monkey",
+      "artist": "Tones and I",
+      "avatar": "https://i.ytimg.com/vi/1__CAdTJ5JU/maxresdefault.jpg",
+      "time": "3:29",
+      "urlSong": "/AllSongs/tones_and_i__dance_monkey.mp3"
+    },
+    {
+      "id": "2",
+      "name": "Wake Me Up",
+      "artist": "Avicii",
+      "avatar": "https://upload.wikimedia.org/wikipedia/ru/0/01/Wake_Me_Up.jpg",
+      "time": "3:27",
+      "urlSong": "/AllSongs/avicii_wake_me_up_ræve.mp3"
+    },
+    {
+      "id": "3",
+      "name": "Lean On",
+      "artist": "Major Lazer Feat. MØ & DJ Snake",
+      "avatar": "https://i1.sndcdn.com/artworks-000123553439-hz2op1-t500x500.jpg",
+      "time": "2:56",
+      "urlSong": "/AllSongs/major_lazer_feat_mø_dj_snake_lean_on.mp3"
+    },
+    {
+      "id": "4",
+      "name": "Faded",
+      "artist": "Alan Walker",
+      "avatar": "https://i1.sndcdn.com/artworks-000161196309-79n8md-t500x500.jpg",
+      "time": "4:24",
+      "urlSong": "/AllSongs/alan_walker__faded.mp3"
+    },
+    {
+      "id": "5",
+      "name": "Lucid Dreams",
+      "artist": "Juice WRLD",
+      "avatar": "https://i.scdn.co/image/ab67616d0000b2735eb0085f2770818792c3c970",
+      "time": "3:59",
+      "urlSong": "/AllSongs/juice-wrld-lucid-dreams.mp3"
+    },
+    {
+      "id": "6",
+      "name": "All Girls Are the Same",
+      "artist": "Juice WRLD",
+      "avatar": "https://cdn-images.dzcdn.net/images/cover/f8c4db1b0f346d6e4b1558f734ad4523/1900x1900-000000-80-0-0.jpg",
+      "time": "2:49",
+      "urlSong": "/AllSongs/juice-wrld-all-girls-are-the-same.mp3"
+    },
+    {
+      "id": "7",
+      "name": "Money so big",
+      "artist": "Yeat",
+      "avatar": "https://images.genius.com/8b5f2a8bddd5ac1522f9217c75c50a77.1000x1000x1.png",
+      "time": "2:40",
+      "urlSong": "/AllSongs/yeat-money-so-big.mp3"
+    },
+    {
+      "id": "8",
+      "name": "Sorry bout that",
+      "artist": "Yeat",
+      "avatar": "https://i.ytimg.com/vi/UcPcH3k07jo/maxresdefault.jpg",
+      "time": "3:06",
+      "urlSong": "/AllSongs/yeat-sorry-bout-that.mp3"
+    },
+    {
+      "id": "9",
+      "name": "Fashion Killa",
+      "artist": "A$AP Rocky",
+      "avatar": "https://i1.sndcdn.com/artworks-DdK1QR4rprblPEhy-kXitnQ-t500x500.jpg",
+      "time": "3:56",
+      "urlSong": "/AllSongs/A$Ap-rocky-fashion-killa.mp3"
+    },
+    {
+      "id": "10",
+      "name": "Angels",
+      "artist": "A$AP Rocky",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGU8SIGysqgA7P02DqoMI8oQdtV59IBZnhQ&s.jpg",
+      "time": "3:47",
+      "urlSong": "/AllSongs/A$Ap-rocky-angels.mp3"
+    }
+  ],
+  "playlists": [
+    {
+      "id": "11",
+      "name": "Goodbye & Good Riddance",
+      "artist": "Juice WRLD",
+      "avatar": "https://cdn-images.dzcdn.net/images/cover/7a03f611f0d25cb00d19e4e01623178f/0x1900-000000-80-0-0.jpg",
+      "songs": [
+        {
+          "id": "5",
+          "name": "Lucid Dreams",
+          "artist": "Juice WRLD",
+          "avatar": "https://i.scdn.co/image/ab67616d0000b2735eb0085f2770818792c3c970",
+          "time": "3:59",
+          "urlSong": "/AllSongs/juice-wrld-lucid-dreams.mp3"
+        },
+        {
+          "id": "6",
+          "name": "All Girls Are the Same",
+          "artist": "Juice WRLD",
+          "avatar": "https://cdn-images.dzcdn.net/images/cover/f8c4db1b0f346d6e4b1558f734ad4523/1900x1900-000000-80-0-0.jpg",
+          "time": "2:49",
+          "urlSong": "/AllSongs/juice-wrld-all-girls-are-the-same.mp3"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "name": "2 Alivë",
+      "artist": "Yeat",
+      "avatar": "https://i1.sndcdn.com/artworks-388KbyzPYf923yqc-XAG1XA-t500x500.jpg",
+      "songs": [
+        {
+          "id": "7",
+          "name": "Money so big",
+          "artist": "Yeat",
+          "avatar": "https://images.genius.com/8b5f2a8bddd5ac1522f9217c75c50a77.1000x1000x1.png",
+          "time": "2:40",
+          "urlSong": "/AllSongs/yeat-money-so-big.mp3"
+        },
+        {
+          "id": "8",
+          "name": "Sorry bout that",
+          "artist": "Yeat",
+          "avatar": "https://i.ytimg.com/vi/UcPcH3k07jo/maxresdefault.jpg",
+          "time": "3:06",
+          "urlSong": "/AllSongs/yeat-sorry-bout-that.mp3"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "name": "LONG.LIVE.A$AP",
+      "artist": "A$AP Rocky",
+      "avatar": "https://cdn-images.dzcdn.net/images/cover/ca42a0630c1d60391ac44f3be6abcac0/0x1900-000000-80-0-0.jpg",
+      "songs": [
+        {
+          "id": "9",
+          "name": "Fashion Killa",
+          "artist": "A$AP Rocky",
+          "avatar": "https://i1.sndcdn.com/artworks-DdK1QR4rprblPEhy-kXitnQ-t500x500.jpg",
+          "time": "3:56",
+          "urlSong": "/AllSongs/A$Ap-rocky-fashion-killa.mp3"
+        },
+        {
+          "id": "10",
+          "name": "Angels",
+          "artist": "A$AP Rocky",
+          "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGU8SIGysqgA7P02DqoMI8oQdtV59IBZnhQ&s.jpg",
+          "time": "3:47",
+          "urlSong": "/AllSongs/A$Ap-rocky-angels.mp3"
+        }
+      ]
+    }
+  ]
+}
