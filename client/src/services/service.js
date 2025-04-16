@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const API = createApi({
   reducerPath: 'songsAPI',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://67ffe17bb72e9cfaf72630da.mockapi.io/test' }),
   endpoints: (build) => ({
     fetchPlaylists: build.query({
       query: () => ({
