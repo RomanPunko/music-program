@@ -1,10 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import Song from '../../components/Song/Song';
+import Song from '../components/Song';
 import React, { useState } from 'react';
-import './playlistPage.scss';
-import { useFetchPlaylistPageSongsQuery } from '../../services/service';
-import { toggleLike } from '../../store/reducers/likedPlaylistSlise';
+import { useFetchPlaylistPageSongsQuery } from '../services/service';
+import { toggleLike } from '../store/reducers/likedPlaylistSlise';
 
 const PlaylistPage = () => {
   const dispatch = useDispatch();
@@ -38,7 +37,7 @@ const PlaylistPage = () => {
 
   return (
     <div className="w-full pt-8 overflow-y-auto pb-[80px] h-full">
-      <div className="playlistPage__info flex gap-6 text-3xl pb-8 ">
+      <div className=" border-b border-config-border-color flex gap-6 text-3xl pb-8 ">
         <div className="relative">
           <img
             src={playlist.avatar}

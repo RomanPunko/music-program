@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { nextSong, previousSong } from '../../store/reducers/songPlayingSlice';
-import PlayPauseButton from '../../ui/PlayPauseButton';
-import SkipButton from '../../ui/SkipButton';
+import { nextSong, previousSong } from '../store/reducers/songPlayingSlice';
+import PlayPauseButton from './PlayPauseButton';
 
 const PlayerButtons = () => {
   const dispatch = useDispatch();
@@ -31,12 +30,19 @@ const PlayerButtons = () => {
 
   return (
     <div className="flex items-center gap-5 absolute left-1/2 -translate-x-1/2 text-4xl box-content -mt-4">
-      <SkipButton
+      <div
+        className="rounded-[10px] p-[5px] cursor-pointer icon-hover hover:rounded-[10px] hover:p-[5px] hover:bg-config-hover-color"
         onClick={handlePreviousSong}
-        skipNextIcon={skipPreviousIcon}
-      />
+        >
+        <img src={skipPreviousIcon} alt="" className="w-8" />
+      </div>
       <PlayPauseButton songsInfo={currentSong} songsList={currentSongsList} />
-      <SkipButton onClick={handleNextSong} skipNextIcon={skipNextIcon} />
+      <div
+          className="rounded-[10px] p-[5px] cursor-pointer icon-hover hover:rounded-[10px] hover:p-[5px] hover:bg-config-hover-color"
+          onClick={handleNextSong}
+        >
+        <img src={skipNextIcon} alt="" className="w-8" />
+      </div>
     </div>
   );
 };

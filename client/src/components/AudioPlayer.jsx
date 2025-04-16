@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import './audioPlayer.scss';
-import { toggleLike } from '../../store/reducers/likedSongsSlice';
-import { nextSong } from '../../store/reducers/songPlayingSlice';
-import PlayerSlider from '../playerSlider/PlayerSlider';
-import VolumeControl from '../volumeController/VolumeControl';
-import PlayerButtons from '../playerButtons/PlayerButtons';
-import PlayerSongInfo from '../playerSongInfo/PlayerSongInfo';
+import { toggleLike } from '../store/reducers/likedSongsSlice';
+import { nextSong } from '../store/reducers/songPlayingSlice';
+import PlayerSlider from './PlayerSlider';
+import VolumeControl from './VolumeControl';
+import PlayerButtons from './PlayerButtons';
+import PlayerSongInfo from './PlayerSongInfo';
+import LikeIcon from './ui/LikeIcon';
 
 const AudioPlayer = () => {
   const audioRef = useRef(null);
@@ -30,7 +30,7 @@ const AudioPlayer = () => {
   useEffect(() => {
     if (audioRef.current && currentSong) {
       audioRef.current.src = currentSong.urlSong;
-      audioRef.current.load();
+      // audioRef.current.load();
       audioRef.current.play();
     }
   }, [currentSong]);
@@ -63,7 +63,7 @@ const AudioPlayer = () => {
     <>
       <audio src={currentSong && currentSong.urlSong} ref={audioRef}></audio>
 
-      <div className="bottom-bar flex items-center px-4 w-full h-[70px] absolute bottom-0">
+      <div className="border-t border-config-border-color bg-config-primary-color flex items-center px-4 w-full h-[70px] absolute bottom-0">
         <PlayerSongInfo />
         <div className="flex items-center">
           <PlayerButtons />
@@ -71,12 +71,7 @@ const AudioPlayer = () => {
           <VolumeControl audioRef={audioRef} />
         </div>
         <div className="cursor-pointer absolute right-3 w-6 h-6">
-          <i
-            className={`cursor-pointer text-2xl absolute right-3 transition-colors duration-300 ${
-              isLiked ? 'fas fa-heart text-white' : 'far fa-heart text-gray-500'
-            }`}
-            onClick={handleToggleLike}
-          ></i>
+          <LikeIcon songsInfo = {currentSong || 0} />
         </div>
       </div>
     </>

@@ -1,14 +1,15 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setVolume } from '../../store/reducers/songPlayingSlice';
-import SeekBar from '../../ui/seekBar/SeekBar';
+import { setVolume } from '../store/reducers/songPlayingSlice';
+import SeekBar from './ui/seekBar/SeekBar';
 
 const VolumeControl = ({ audioRef }) => {
   const volumeUpIcon = '/Icon/volumeUp.svg';
   const dispatch = useDispatch();
   const volume = useSelector((state) => state.songPlaying.volume);
   const seekRef = useRef(null);
+  
   ///
 
   const handleVolumeChange = (event) => {

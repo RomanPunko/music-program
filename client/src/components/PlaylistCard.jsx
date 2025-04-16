@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
-import { toggleLike } from '../../store/reducers/likedPlaylistSlise';
+import { toggleLike } from '../store/reducers/likedPlaylistSlise';
 import { useSelector, useDispatch } from 'react-redux';
 
 const PlaylistCard = ({ id, avatar, artist, name }) => {

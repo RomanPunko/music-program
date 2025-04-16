@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './favoriteSongs.scss';
-import Song from '../../components/Song/Song';
-import PlaylistCard from '../../components/PlaylistCard/PlaylistCard';
+import Song from '../../components/Song';
+import PlaylistCard from '../../components/PlaylistCard';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   useFetchSongsQuery,

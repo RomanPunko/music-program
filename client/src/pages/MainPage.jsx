@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import PlaylistCard from '../../components/PlaylistCard/PlaylistCard';
-import { useFetchPlaylistsQuery } from '../../services/service';
+import PlaylistCard from '../components/PlaylistCard';
+import { useFetchPlaylistsQuery } from '../services/service';
 
 const MainPage = () => {
   const { data: playlists = [], error, isLoading } = useFetchPlaylistsQuery();

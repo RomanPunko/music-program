@@ -1,5 +1,7 @@
 /********** Range Input Styles **********/
 /* Range Reset */
+@import '../../../styles/global.scss';
+
 input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
@@ -30,9 +32,7 @@ input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -2px; /* Centers thumb on the track */
-
-  /* Custom styles */
-  background-color: #fff; /* Червоний колір для повзунка */
+  background-color: #fff;
   height: 0rem;
   width: 0rem;
   border-radius: 50px;
@@ -42,9 +42,7 @@ input[type='range']:hover::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -3.5px; /* Centers thumb on the track */
-
-  /* Custom styles */
-  background-color: #fff; /* Червоний колір для повзунка */
+  background-color: #fff; 
   height: 0.8rem;
   width: 0.8rem;
   border-radius: 50px;
@@ -66,9 +64,7 @@ input[type='range']::-moz-range-track {
 input[type='range']::-moz-range-thumb {
   border: none; /* Removes extra border that FF applies */
   border-radius: 0; /* Removes default border-radius that FF applies */
-
-  /* Custom styles */
-  background-color: #fff; /* Червоний колір для повзунка */
+  background-color: #fff;
   height: 1rem;
   width: 1rem;
 }

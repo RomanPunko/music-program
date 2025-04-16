@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Song from '../../components/Song/Song';
-import { useFetchSongsQuery } from '../../services/service';
+import Song from '../components/Song';
+import { useFetchSongsQuery } from '../services/service';
 
 const SearchPage = () => {
   const { data: songsList = [], error, isLoading } = useFetchSongsQuery();

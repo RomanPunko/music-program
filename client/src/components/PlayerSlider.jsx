@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   setCurrentTime,
   setDuration,
-} from '../../store/reducers/songPlayingSlice';
-import SeekBar from '../../ui/seekBar/SeekBar';
+} from '../store/reducers/songPlayingSlice';
+import SeekBar from './ui/seekBar/SeekBar';
 
 const PlayerSlider = ({ audioRef }) => {
   const dispatch = useDispatch();
@@ -61,7 +61,7 @@ const PlayerSlider = ({ audioRef }) => {
           onChange={handleSeek}
           max={duration}
           ref={seekRef}
-        ></SeekBar>
+        />
         <p className="text-xs ml-2 opacity-60">{formatTime(duration)}</p>
       </div>
     </div>

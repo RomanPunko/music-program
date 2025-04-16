@@ -20,7 +20,7 @@ const PlayPauseButton = ({ songsInfo, songsList }) => {
 
   return (
     <div
-      className="rounded-[10px] p-[5px] cursor-pointer icon-hover"
+      className="rounded-[10px] p-[5px] cursor-pointer hover:rounded-[10px] hover:p-[5px] hover:bg-config-hover-color"
       onClick={togglePlayPause}
     >
       <img

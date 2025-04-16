@@ -1,6 +1,5 @@
 import './styles/global.scss';
 import './styles/reset.scss';
-
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { Provider } from 'react-redux';
