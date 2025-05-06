@@ -20,3 +20,7 @@ $colors: (
 a {
   color: map-get($colors, text);
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}

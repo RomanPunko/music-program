@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import MainPage from '../pages/MainPage';
-import FavoriteSongs from '../pages/FavoriteSongsPage/FavoriteSongs';
+import FavoriteSongs from '../pages/FavoriteSongs';
 import SearchPage from '../pages/SearchPage';
 import PlaylistPage from '../pages/PlaylistPage';
 

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
-import { toggleLike } from '../store/reducers/likedPlaylistSlise';
+import { toggleLike } from '../store/reducers/likedPlaylistSlice';
 import { useAppSelector, useAppDispatch } from '../hooks/AppHooks';
 
 interface IPlaylistCardProps{

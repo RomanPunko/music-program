@@ -3,7 +3,7 @@ import { useAppSelector, useAppDispatch } from '../hooks/AppHooks';
 import Song from '../components/Song';
 import React, { useState } from 'react';
 import { useFetchPlaylistPageSongsQuery } from '../services/service';
-import { toggleLike } from '../store/reducers/likedPlaylistSlise';
+import { toggleLike } from '../store/reducers/likedPlaylistSlice';
 
 
 const PlaylistPage = () => {
